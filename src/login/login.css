@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.all{
+    width: 100%;
+    height: 100vh;
+    background-image:url(../../public/download.jpg)  ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+
+}
+
+.form{
+    position: relative;
+    background-color: rgba(0, 0, 0, .5) ;
+    display:flex ;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black ;
+    padding: 3rem 1rem;
+    border-radius:1rem ;
+    overflow: hidden;
+
+}
+.form::before{
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 170%;
+    top: -3rem;
+    background:linear-gradient(#00ccff,#d500f9) ;
+    animation:rotate 4s linear infinite ;
+   
+}
+.form::after{
+    content: '';
+    position: absolute;
+    background: #0e1538;
+    inset: 5px;
+    border-radius: 1rem;
+}
+ @keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+    
+} 
+label{
+    position: relative;
+    text-align: left !important;
+    padding: .2rem 0;
+    z-index: 2;
+    overflow: hidden;
+    border: ;
+}
+
+input{
+    margin: .3rem 0 !important;
+    background-color: rgba(0, 0, 0, .9);
+    color: #fff;
+    font-style: italic;
+    z-index: 2;
+    border-radius: 1rem;
+    padding: .2rem .6rem;
+}
+
+.btn-1,.btn-2{
+    border-radius: 2rem;
+    padding: .2rem .8rem;
+    background-color:rgba(0, 0, 0, .4);
+    color: #fff;
+     z-index: 2;
+}
