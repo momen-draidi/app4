@@ -33,7 +33,7 @@
     overflow: hidden;
 
 }
-.form::before{
+ .form::before{
     content: '';
     position: absolute;
     width: 150px;
@@ -57,17 +57,18 @@
         transform: rotate(360deg);
     }
     
-} 
+}  
 label{
     position: relative;
     text-align: left !important;
     padding: .2rem 0;
     z-index: 2;
     overflow: hidden;
-    border: ;
+    
 }
 
 input{
+    position: relative;
     margin: .3rem 0 !important;
     background-color: rgba(0, 0, 0, .9);
     color: #fff;
@@ -76,6 +77,7 @@ input{
     border-radius: 1rem;
     padding: .2rem .6rem;
 }
+
 
 .btn-1,.btn-2{
     border-radius: 2rem;
